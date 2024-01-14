@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#text").click(function() {
+				$("#p1").text(function (i,origText){
+					return "Oldtext: " + origText + "New text: Hello world (index: "+ i +")";
+					
+				})
+			})
+			$("#html").click(function() {
+				$("#p2").html(function (i,origText){
+					return "Oldtext: " + origText + "New text: <b>Hello world<b> (index: "+ i +")";
+					
+				})
+				
+			})
+			$("#input").click(function() {
+					$("#w3s").attr("href", function(i, origValue) {
+						return origValue+"/jquery/"; 
+					})
+				})
+		})
+	</script>
+</head>
+<body>
+		<p id="p1">This is a paragraph</p>
+		<p id="p2">This is another paragraph</p>
+		<p><a id="w3s" href="https://www.w3schools.com">w3schools.com</a></p>
+
+		<button id="text"> Show old/new text</button>
+		<button id="html"> Show old/new html</button>
+		<button id="input"> Show new href value</button>
+
+
+
+</body>
+</html>

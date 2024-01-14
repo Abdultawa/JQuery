@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				// $("div").animate({
+					// left: '50%',
+					// height: '+=150px',
+					// width: '+=150px'
+					// height: 'toggle'
+				// })
+				var div = $("div");
+				div.animate({left: '500px', opacity: 0.7}, "slow");
+				div.animate({width: '500px', opacity: 0.4}, "slow");
+				div.animate({height: '500px', opacity: 0.8}, "slow");
+				div.animate({width: '350px', opacity: 0.15}, "slow");
+				div.animate({fontSize: '5em'}, "slow");
+
+			})
+		})
+	</script>
+</head>
+<body>
+		<button>Animate</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Abdultawab</div>
+</body>
+</html>

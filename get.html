@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#text").click(function() {
+				alert("Text: " +$("p").text())
+			})
+			$("#html").click(function() {
+				alert("Text: " +$("p").html())
+			})
+			$("#input").click(function() {
+				alert("Text: " +$("input").val())
+			})
+			$("#href").click(function() {
+				alert("Value : " +$("#w3s").attr("href"))
+			})
+		})
+	</script>
+</head>
+<body>
+	<p>This is <b>bold</b> in text</p>
+	Name:<input type="text" name="" value="Abdultawab"><br><br>
+	<a href="https://www.w3schools.com" id="w3s">W3Schools.com</a><br><br>
+	<button id="text">show text</button>
+	<button id="html">show html</button>
+	<button id="input">show Value</button>
+	<button id="href">show Value href</button>
+
+
+
+</body>
+</html>

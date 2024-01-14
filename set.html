@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#text").click(function() {
+				$("#p1").text("Hello world");
+			})
+			$("#html").click(function() {
+				$("#p2").html("<b>Hello world</b>");
+			})
+			$("#value").click(function() {
+				$("input").val("Nasirudeen");
+			})
+
+		})
+	</script>
+</head>
+<body>
+		<p id="p1">This is a paragraph</p>
+		<p id="p2">This is another paragraph</p>
+		Name:<input type="text" name="" value="Abdultawab"><br><br>
+
+		<button id="text">Set text</button>
+		<button id="html">Set html</button>
+		<button id="value">Set vlaue</button>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".before").click(function() {
+				$("img").before("<i>Before</i>")
+			});
+			$(".after").click(function() {
+				$("img").after("<i>After</i>")
+			})
+		})
+		function afterText(){
+			var txt1 = "<b>I </b>";
+			var txt2 = $("<i></i>").text("love");
+			var txt3 = document.createElement("b");
+			txt3.innerHTML = " JQuery";
+			$("img").after(txt1,txt2,txt3);
+		}
+	</script>
+</head>
+<body>
+		<img src="https://www.w3schools.com/images/w3jquery.gif" width="100px" height="140px"><br><br>
+
+		<button class="before">Insert Before</button>
+		<button class="after">Insert After</button>
+
+		<button onclick="afterText()">After message</button>
+</body>
+</html>

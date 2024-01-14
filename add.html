@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".text").click(function() {
+				$("p").append("<b>Appended Text</b>");
+				$("p").prepend("<b>Perpended Text</b>");
+
+			})
+			$(".list").click(function() {
+				$("ol").append("<li>Appended Text</li>");
+				$("ol").prepend("<li>Prepended Text</li>");
+			})
+		})
+		function appendText(){
+			var txt1 = "<p>Text</p>"// with HTML
+			var txt2 = $("<p></p>").text("Text");// with JQuery
+			var txt3 = document.createElement("p");
+			txt3.innerHTML = "Text";// with DOM
+			$("body").append(txt1,txt2,txt3);
+
+		}
+	</script>
+</head>
+<body>
+	<p>This a paragraph</p>
+	<p>This another paragraph</p>
+
+	<ol>
+		<li>Apple</li>
+		<li>Apple</li>
+		<li>Apple</li>
+		<li>Apple</li>
+	</ol>
+
+	<button class="text">Append text</button>
+	<button class="list">Append list</button>
+
+	<button onclick="appendText()">Append</button>
+</body>
+</html>

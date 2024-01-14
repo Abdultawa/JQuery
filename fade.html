@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#fadeOut").click(function() {
+				$("#div1").fadeOut();
+				$("#div2").fadeOut("slow");
+				$("#div3").fadeOut(3000);
+			})
+			$("#fadeT").click(function() {
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow");
+				$("#div3").fadeToggle(3000);
+			})
+				$("#fadeTo").click(function() {
+				$("#div1").fadeTo("slow",0.15);
+				$("#div2").fadeTo("slow", 0.7);
+				$("#div3").fadeTo("slow", 0.4);
+			})
+		})
+	</script>
+	<title></title>
+</head>
+<body>
+		<button id="fadeOut">fadeOut</button>
+		<button id="fadeT">fadeToggle</button>
+		<button id="fadeTo">fadeTo</button><br><br>
+
+	<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+	<div id="div3" style="width:80px;height:80px;background-color:green;"></div><br>
+	<div id="div2" style="width:80px;height:80px;background-color:yellow;"></div><br>
+</body>
+</html>

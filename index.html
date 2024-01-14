@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- 	<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").hover(function(){
+				alert("you hover on the text");
+			},
+			 function(){
+				alert("you are leaving the text")
+			});
+		})
+	</script> -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("input").focus(function () {
+				$(this).css("background-color", "yellow");
+			});
+			$("input").blur(function(){
+				$(this).css("background-color", "green");
+			})
+
+			})
+	</script>
+</head>
+<body>
+<!-- 		<button>click</button>
+		<p>My text</p>
+		<h2 class="intro">This is a heading</h2> -->
+
+		Name: <input type="text" name="">
+		Password: <input type="password" name="">
+</body>
+</html>
